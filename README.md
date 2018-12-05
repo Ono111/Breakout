@@ -1,7 +1,7 @@
 # Breakout
-## 1.コマンドプロンプトで次のコードを打って、リポジトリにフォルダを作る。
+## 1.コマンドプロンプトで次のコードを打って、PC内にフォルダを作る。
 ~~~
-git clone https://github.com/hiroki-inoue-git/simple_shooting
+git clone https://github.com/Ono111/Breakout
 ~~~
 
 ## 2.作業するときは、ブランチを切る。
