@@ -19,7 +19,7 @@ class Ball:
 
     def draw(self):
         # 円を描画する。
-        self.pyxel.circ(self.x, self.y, self.r, 0)
+        self.pyxel.circ(self.x, self.y, self.r, self.color)
 
     def setSpeed(self, x, y):
         # x方向、y方向への1フレームごとの移動量を設定する。
