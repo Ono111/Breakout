@@ -1,4 +1,5 @@
 # coding:utf-8
+import math
 
 class Ball:
     def __init__(self, x, y, pyxel, color=0):
@@ -9,7 +10,7 @@ class Ball:
         self.color = color
         self.dx = 2
         self.dy = 2
-        self.r = 5
+        self.r = 3
 
     def move(self):
         # 円の位置を移動させる。
@@ -32,3 +33,13 @@ class Ball:
     def changeSize(self, r):
         # 円の半径を設定する。
         self.r = r
+
+    def hitPosition(self):
+        # 当たり判定に用いるリストの作成。
+        li = []
+        for a in range(8):
+            a = a / 4
+            x = self.x + self.r * math.cos(a * math.pi)
+            y = self.y + self.r * math.sin(a * math.pi)
+            li.append([x, y])
+        return li
